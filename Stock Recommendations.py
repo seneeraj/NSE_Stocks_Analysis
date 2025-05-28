@@ -65,9 +65,9 @@ def plot_charts(df, ticker):
     st.pyplot(fig)  # ✅ Ensure plots render in Streamlit
 
 # Streamlit UI setup
-st.title("📊 Intraday Stock Analysis Tool (NSE)")
+st.title("📊NSE Stock Analysis Tool")
 
-symbol = st.text_input("Enter NSE stock symbol (Nifty50 Stocks) (e.g., RELIANCE.NS, Infy.ns)", "").upper()
+symbol = st.text_input("Enter NSE stock symbol (Nifty Stocks) (e.g., RELIANCE.NS, Infy.ns)", "").upper()
 interval = st.selectbox("Select Computational Interval (In Minuts/Hours/Day)", ["1m", "5m", "15m", "1h", "1d"])
 period = st.selectbox("Select Period - To copute with Historical Data (In Days/Months)", ["1d", "5d", "1mo", "3mo"])
 
