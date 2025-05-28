@@ -82,9 +82,9 @@ if symbol:
             st.warning("⚠️ No data fetched. Please check the stock symbol, interval, or period.")
         else:
             # Convert timestamps to Indian Time
-     if interval == "1d":
+if interval == "1d":
             df.index = pd.to_datetime(df.index).tz_localize('UTC').tz_convert('Asia/Kolkata')
-        else:
+else:
             df.index = df.index.tz_convert('Asia/Kolkata')
 
             # Select relevant columns
