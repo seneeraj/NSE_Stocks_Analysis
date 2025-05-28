@@ -67,7 +67,7 @@ def plot_charts(df, ticker):
 # Streamlit UI setup
 st.title("📊 Intraday Stock Analysis Tool (NSE)")
 
-symbol = st.text_input("Enter NSE stock symbol (e.g., RELIANCE.NS)", "").upper()
+symbol = st.text_input("Enter NSE stock symbol (e.g., RELIANCE.NS, Infy.ns)", "").upper()
 interval = st.selectbox("Select Interval", ["1m", "5m", "15m", "1h", "1d"])
 period = st.selectbox("Select Period", ["1d", "5d", "1mo", "3mo"])
 
