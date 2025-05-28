@@ -68,8 +68,8 @@ def plot_charts(df, ticker):
 st.title("📊 Intraday Stock Analysis Tool (NSE)")
 
 symbol = st.text_input("Enter NSE stock symbol (Nifty50 Stocks) (e.g., RELIANCE.NS, Infy.ns)", "").upper()
-interval = st.selectbox("Select Interval (In Minuts/Hours/Day)", ["1m", "5m", "15m", "1h", "1d"])
-period = st.selectbox("Select Period (In Days/Months)", ["1d", "5d", "1mo", "3mo"])
+interval = st.selectbox("Select Computational Interval (In Minuts/Hours/Day)", ["1m", "5m", "15m", "1h", "1d"])
+period = st.selectbox("Select Period - To copute with Historical Data (In Days/Months)", ["1d", "5d", "1mo", "3mo"])
 
 if symbol:
     ticker = symbol + ".NS" if not symbol.endswith(".NS") else symbol
