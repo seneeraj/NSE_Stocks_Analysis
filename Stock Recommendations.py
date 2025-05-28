@@ -83,9 +83,9 @@ if symbol:
         else:
             # Convert timestamps to Indian Time
             if interval == "1d":
-            df.index = pd.to_datetime(df.index).tz_localize('UTC').tz_convert('Asia/Kolkata')
+                df.index = pd.to_datetime(df.index).tz_localize('UTC').tz_convert('Asia/Kolkata')
             else:
-            df.index = df.index.tz_convert('Asia/Kolkata')
+                df.index = df.index.tz_convert('Asia/Kolkata')
 
             # Select relevant columns
             df = df[['Close', 'Volume']]
